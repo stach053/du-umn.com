@@ -190,19 +190,21 @@ layout: default
 	<div class="row">
 		<ol class="events list-inline">
 		{% for post in site.categories.events reversed %}
-		    <li class="event">
-		    	<ul class="list-inline">
-                    <li class="col-md-4">
-                        <img src="img/du_logo.jpg" width="144" height="165" class="img-responsive" />
-                    </li>
-                    <li  class="col-md-8">
-                        <h4><b>{{ post.date | date: '(%m/%d)' }}</b> {{ post.title }}</h4>
-                        <h5>{{ post.event_type }}</h5>
-                        <p>{{ post.content }}</p>
-                        <a href="{{ post.url }}">Event Page</a>
-                   </li>
-                </ul>
-		    </li>
+			<li class="event">
+				<div class="container">
+					<ul class="list-inline">
+						<li class="col-md-4">
+							<img src="img/du_logo.jpg" width="144" height="165" class="img-responsive" />
+						</li>
+						<li  class="col-md-8">
+							<h4><b>{{ post.date | date: '(%m/%d)' }}</b> {{ post.title }}</h4>
+							<h5>{{ post.event_type }}</h5>
+							<p>{{ post.content }}</p>
+							<a href="{{ post.url }}">Event Page</a>
+						</li>
+					</ul>
+				</div>
+			</li>
 		{% endfor %}
 		</ol>
 	</div>
