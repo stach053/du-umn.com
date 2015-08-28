@@ -188,10 +188,10 @@ layout: default
 		</div>
 	</div>
 	<div class="row">
-		<ol class="events list-inline">
-		{% for post in site.categories.events reversed %}
-			<li class="event">
-				<div class="container">
+		<div class="container">
+			<ol class="events list-inline">
+			{% for post in site.categories.events reversed %}
+				<li class="event">
 					<ul class="list-inline">
 						<li class="col-md-4">
 							<img src="img/du_logo.jpg" width="144" height="165" class="img-responsive" />
@@ -203,10 +203,10 @@ layout: default
 							<a href="{{ post.url }}">Event Page</a>
 						</li>
 					</ul>
-				</div>
-			</li>
-		{% endfor %}
-		</ol>
+				</li>
+			{% endfor %}
+			</ol>
+		</div>
 	</div>
 </div>
 <a name="Contact" id="Contact"></a>
