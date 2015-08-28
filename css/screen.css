@@ -1,0 +1,298 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin-bottom: 240px;
+	padding-top: 90px; /* Pad the navbar */
+	font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Fix anchor positioning for navbar */
+a[name] {
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
+}
+
+.blue {
+	color: rgb(11, 44, 91);
+}
+
+textarea {
+    resize: none;
+}
+
+.form-control {
+	border-radius: 0;
+	font-style: italic;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+
+/******************* Hr *******************/
+.hr {
+	margin-bottom: 30px;
+}
+
+.hr hr {
+	margin: 10px 0;
+}
+
+.hr h3 {
+	margin-top: 10px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+
+
+.social a {
+	display: block;
+	width: 42px;
+	height: 42px;
+	line-height: 43px;
+	background: rgb(34, 34, 34);
+	color: rgb(255, 255, 255);
+	overflow: hidden;
+	font-size: 18px;
+}
+.social a:hover .icon {	
+	font-size: 24px;
+}
+
+.social .social-facebook:hover {
+	background: rgb(59, 89, 152);
+}
+.social .social-twitter:hover {
+	background: rgb(0, 172, 237);
+}
+.social .social-linkedin:hover {
+	background: rgb(0, 123, 182);
+}
+
+.navbar-large {
+	background-color: rgb(255, 255, 255);
+	border-bottom: 1px solid #eee;
+}
+
+.navbar-large .navbar-brand {
+	height: 90px;
+	color: #000561;
+}
+
+.navbar-large .navbar-nav {
+	margin-top: 19px;
+}
+
+.navbar-large .nav > li > a {
+	color: #777777;
+	font-size: 12px;
+}
+.navbar-large .nav > li > a:focus {
+	background: inherit;
+}
+.navbar-large .nav > li > a:hover {
+	background: rgb(11, 44, 91);
+	color: rgb(255, 255, 255);
+}
+
+.carousel {
+  height: 500px;
+  background: url('/img/skyline_hd.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.carousel .item {
+	height: 500px;
+}
+
+.carousel .carousel-caption {
+	bottom: 160px;
+}
+
+.carousel .btn {
+	background: rgb(73,73,75);
+	color: rgb(255, 255, 255);
+}
+.carousel .btn:hover {
+	background: rgb(0, 5, 97);
+}
+
+.carousel .carousel-indicators li {
+	border-radius: 0;
+}
+
+.welcome {
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+.welcome h1 {
+	color: rgb(77, 77, 77);
+	font-weight: normal;
+	margin-top: 0;
+}
+
+.about {
+	margin-bottom: 20px;
+	color: rgb(51, 51, 51);
+}
+
+.about h3 {
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.about p {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/******************* Member *******************/
+.member {
+	position: relative;
+}
+
+.member .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out 0s;
+}
+.member:hover .overlay {
+	opacity: 1;
+}
+
+/******************* Exec *******************/
+.exec {
+	background: url('/img/exec.jpg');
+	color: rgb(255, 255, 255);
+	padding-top: 20px;
+	padding-bottom: 40px;
+	margin-bottom: 30px;
+}
+
+.exec .member {
+	margin-bottom: 40px;
+}
+
+.exec .member img {
+	border: 1px solid rgb(255, 255, 255);
+}
+
+.exec .member .overlay {
+	padding-top: 105px;
+	height: 258px;
+	background-color: rgba(33,33,33,0.6);;
+}
+
+.exec .member .overlay a {
+	display: inline-block;
+}
+
+.exec .member h3 {
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 2px;
+}
+
+.exec .member h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-style: italic;
+	font-size: 16px;
+}
+
+.exec .member h5 {
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+.exec .member h5 a {
+	color: rgb(255, 255, 255);
+}
+
+
+/******************* Events *******************/
+.event {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+	.event {
+		max-width: 49%;
+	}
+}
+
+/******************* Contact *******************/
+.contact {
+	font-weight: 300;
+	margin-bottom: 60px;
+}
+
+.contact iframe {
+	margin-bottom: 7px;
+}
+
+
+.contact form {
+	padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contact .icon {
+	font-size: 20px;
+	line-height: 14px;
+}
+.contact .icon::before {
+	margin-left: 0;
+}
+
+.contact textarea {
+	height: 138px;
+}
+
+.contact button {
+	margin-right: -15px;
+}
+
+/******************* Footer *******************/
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 240px;
+}
+
+.footer .social {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.footer .quote {
+	background-color: #8996a0;
+	color: rgb(255, 255, 255);
+	padding: 10px 0;
+	font-size: 20px;
+}
+
+.footer .quote .quote-icon {
+	font-size: 46px;
+	margin-right: 12px;
+	width: 20px;
+}
+
+.footer .quote-container {
+	border-left: 2px solid rgb(255, 255, 255);
+}
