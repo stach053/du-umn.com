@@ -104,7 +104,7 @@ textarea {
 
 .carousel {
   height: 500px;
-  background: url('../img/skyline_hd.jpg') no-repeat center center fixed;
+  background: url('img/skyline_hd.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -174,7 +174,7 @@ textarea {
 
 /******************* Exec *******************/
 .exec {
-	background: url('../img/exec.jpg');
+	background: url('img/exec.jpg');
 	color: rgb(255, 255, 255);
 	padding-top: 20px;
 	padding-bottom: 40px;
