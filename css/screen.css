@@ -91,6 +91,14 @@ textarea {
 	margin-top: 19px;
 }
 
+.navbar-large .navbar-nav .navbar-toggle {
+	border-color: rgb(200,200,200);
+}
+
+.navbar-large .navbar-nav .navbar-toggle .icon-bar {
+	background-color: rgb(200,200,200);
+}
+
 .navbar-large .nav > li > a {
 	color: #777777;
 	font-size: 12px;
