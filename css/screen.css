@@ -294,6 +294,11 @@ textarea {
 	width: 20px;
 }
 
+.footer .quote .quote-icon .icon {
+	top: -10px;
+    position: relative;
+}
+
 .footer .quote-container {
 	border-left: 2px solid rgb(255, 255, 255);
 	margin-left: 62px;
